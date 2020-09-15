@@ -1,0 +1,11 @@
+.container{
+    margin-top:10px;
+    text-align:center;
+    width:400px;
+}
+.column{
+    height:60px;
+}
+.column h3{
+    margin-top:10px;
+}

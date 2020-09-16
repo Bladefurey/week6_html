@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h3>Test Js Calculator</h3>
+        <form>
+            enter number1: 
+            <input type="text" id="val1">
+            enter number2:
+            <input type="text" id="val2">
+            <p id="result"></p>
+            <button type="button" onclick="calculate1()">Plus</button>
+            <button type="button" onclick="calculate2()">sub</button>
+            <button type="button" onclick="calculate3()">multi</button>
+            <button type="button" onclick="calculate4()">division</button>
+        </form>
+        <script>
+            function calculate1(){
+                var num1=parseInt(document.getElementById("val1").value);
+                var num2=parseInt(document.getElementById("val2").value);
+                document.getElementById("result").innerHTML="addition "+(num1+num2);
+                window.alert("addition: "+(num1+num2));
+            }
+            function calculate2(){
+                var num1=parseInt(document.getElementById("val1").value);
+                var num2=parseInt(document.getElementById("val2").value);
+                document.getElementById("result").innerHTML="sub"+(num1-num2);
+                window.alert("sub: "+(num1-num2));
+            }
+            function calculate3(){
+                var num1=parseInt(document.getElementById("val1").value);
+                var num2=parseInt(document.getElementById("val2").value);
+                document.getElementById("result").innerHTML="multi "+(num1*num2);
+                window.alert("multi: "+(num1*num2));
+            }
+            function calculate4(){
+                var num1=parseInt(document.getElementById("val1").value);
+                var num2=parseInt(document.getElementById("val2").value);
+                document.getElementById("result").innerHTML="divi "+(num1/num2);
+                window.alert("divi: "+(num1/num2));
+            }
+        </script>
+    </body>
+</html>

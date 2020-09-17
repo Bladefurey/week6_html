@@ -20,7 +20,7 @@
                 <option value="div">/</option>
             </select>
             num2<input type="text" id="val2">
-            <button type="button" onclick="calculate()">Calculate</button><br>
+            <button type="button" id="calc" onclick="calculate()" onmouseover="changecolor()" onmouseout="removecolor()">Calculate</button><br>
             Ans: <p id="result"></p>
         </form>
         <script>
@@ -42,6 +42,12 @@
                         document.getElementById("result").innerHTML=num1/num2;
                         break;
                     }
+            }
+            function changecolor(){
+                document.getElementById("calc").style.backgroundColor="Red";
+            }
+            function removecolor(){
+                document.getElementById("calc").style.backgroundColor="white";
             }
         </script>
     </body>
